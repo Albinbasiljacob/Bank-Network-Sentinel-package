@@ -1,0 +1,11 @@
+┌─────────────────────────────────────────────┐
+│              BNS Architecture               │
+├─────────────────────────────────────────────┤
+│  [Packet Capture] → Scapy sniff()          │
+│         ↓                                   │
+│  [Protocol Parser] → HTTP/DNS/ISO8583      │
+│         ↓                                   │
+│  [Detection Engine] → Rules + IsolationForest│
+│         ↓                                   │
+│  [Response Module] → Alerts + iptables block │
+└─────────────────────────────────────────────┘
